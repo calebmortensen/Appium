@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-28T18:52:11 PDT" name="Default suite" finished-at="2024-08-28T18:52:48 PDT" duration-ms="37673">
+  <suite started-at="2024-08-29T12:07:47 PDT" name="Default suite" finished-at="2024-08-29T12:08:28 PDT" duration-ms="41011">
     <groups>
     </groups>
-    <test started-at="2024-08-28T18:52:11 PDT" name="Default test" finished-at="2024-08-28T18:52:48 PDT" duration-ms="37673">
-      <class name="setup.AppiumBasics">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:setup.AppiumBasics@c730b35]" started-at="2024-08-28T18:52:11 PDT" name="ConfigureAppium" finished-at="2024-08-28T18:52:43 PDT" duration-ms="32066" status="PASS">
+    <test started-at="2024-08-29T12:07:47 PDT" name="Default test" finished-at="2024-08-29T12:08:28 PDT" duration-ms="41011">
+      <class name="setup.LongPress">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:setup.LongPress@43bc63a3]" started-at="2024-08-29T12:07:47 PDT" name="ConfigureAppium" finished-at="2024-08-29T12:08:10 PDT" duration-ms="22726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="WifiSettingsName()[pri:0, instance:setup.AppiumBasics@c730b35]" started-at="2024-08-28T18:52:43 PDT" name="WifiSettingsName" finished-at="2024-08-28T18:52:45 PDT" duration-ms="2535" status="PASS">
+        <test-method signature="LongPressGesture()[pri:0, instance:setup.LongPress@43bc63a3]" started-at="2024-08-29T12:08:10 PDT" name="LongPressGesture" finished-at="2024-08-29T12:08:26 PDT" duration-ms="15820" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WifiSettingsName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:setup.AppiumBasics@c730b35]" started-at="2024-08-28T18:52:45 PDT" name="tearDown" finished-at="2024-08-28T18:52:48 PDT" duration-ms="2870" status="PASS">
+        </test-method> <!-- LongPressGesture -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:setup.LongPress@43bc63a3]" started-at="2024-08-29T12:08:26 PDT" name="tearDown" finished-at="2024-08-29T12:08:28 PDT" duration-ms="2355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- setup.AppiumBasics -->
+      </class> <!-- setup.LongPress -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
