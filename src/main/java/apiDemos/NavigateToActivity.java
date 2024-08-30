@@ -1,4 +1,4 @@
-package setup;
+package apiDemos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.DeviceRotation;
@@ -14,9 +14,10 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+import setup.BaseSetup;
 
 
-public class NavigateToActivity extends BaseTest {
+public class NavigateToActivity extends BaseSetup {
 
 	@Test
 	public void Navigate() throws MalformedURLException, InterruptedException

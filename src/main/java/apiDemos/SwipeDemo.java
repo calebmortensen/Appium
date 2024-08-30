@@ -1,4 +1,4 @@
-package setup;
+package apiDemos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -9,8 +9,9 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import io.appium.java_client.AppiumBy;
+import setup.BaseSetup;
 
-public class SwipeDemo extends BaseTest {
+public class SwipeDemo extends BaseSetup {
 
 	@Test
 	public void SwipeDemoTest() throws MalformedURLException, InterruptedException

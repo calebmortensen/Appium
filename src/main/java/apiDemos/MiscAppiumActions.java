@@ -1,4 +1,4 @@
-package setup;
+package apiDemos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.DeviceRotation;
@@ -8,9 +8,10 @@ import java.net.MalformedURLException;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+import setup.BaseSetup;
 
 
-public class MiscAppiumActions extends BaseTest {
+public class MiscAppiumActions extends BaseSetup {
 
 	@Test
 	public void Misc() throws MalformedURLException, InterruptedException

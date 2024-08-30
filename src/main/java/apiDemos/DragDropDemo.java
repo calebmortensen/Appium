@@ -1,4 +1,4 @@
-package setup;
+package apiDemos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,8 +11,9 @@ import com.google.common.collect.ImmutableMap;
 
 import java.net.MalformedURLException;
 import io.appium.java_client.AppiumBy;
+import setup.BaseSetup;
 
-public class DragDropDemo extends BaseTest {
+public class DragDropDemo extends BaseSetup {
 
 	@Test
 	public void SwipeDemoTest() throws MalformedURLException, InterruptedException {

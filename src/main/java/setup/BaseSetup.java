@@ -21,7 +21,7 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 
-public class BaseTest {
+public class BaseSetup {
 	public AndroidDriver driver;
 	public AppiumDriverLocalService service;
 	
@@ -38,7 +38,8 @@ public class BaseTest {
 				
 				UiAutomator2Options options = new UiAutomator2Options();
 				options.setDeviceName("MP35"); //emulator
-				options.setApp("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\ApiDemos-debug.apk");
+				//options.setApp("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\ApiDemos-debug.apk");
+				options.setApp("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\General-Store.apk");
 				
 				driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

@@ -1,4 +1,4 @@
-package setup;
+package apiDemos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -6,8 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import io.appium.java_client.AppiumBy;
+import setup.BaseSetup;
 
-public class LongPress extends BaseTest {
+public class LongPress extends BaseSetup {
 
 	@Test
 	public void LongPressGesture() throws MalformedURLException, InterruptedException

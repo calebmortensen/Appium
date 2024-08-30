@@ -1,4 +1,4 @@
-package setup;
+package apiDemos;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
@@ -7,8 +7,9 @@ import com.google.common.collect.ImmutableMap;
 
 import java.net.MalformedURLException;
 import io.appium.java_client.AppiumBy;
+import setup.BaseSetup;
 
-public class ScrollDemo extends BaseTest {
+public class ScrollDemo extends BaseSetup {
 
 	@Test
 	public void LongPressGesture() throws MalformedURLException, InterruptedException
