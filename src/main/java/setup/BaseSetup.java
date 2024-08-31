@@ -72,6 +72,11 @@ public class BaseSetup {
 							));
 					
 				}
+				
+				public Double getFormattedAmount(String amount) {
+					Double price = Double.parseDouble(amount.substring(1)); //removes $ sign & makes string a double
+					return price;
+				}
 	
 	@AfterClass
 	public void tearDown() {

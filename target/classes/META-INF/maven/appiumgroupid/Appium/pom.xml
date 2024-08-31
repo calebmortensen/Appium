@@ -33,6 +33,12 @@
 			<scope>test</scope>
 		</dependency>
 
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-support</artifactId>
+    <version>4.24.0</version>
+</dependency>
+
 
 	</dependencies>
 
