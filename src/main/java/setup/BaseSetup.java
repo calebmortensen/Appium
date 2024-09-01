@@ -38,6 +38,7 @@ public class BaseSetup {
 				
 				UiAutomator2Options options = new UiAutomator2Options();
 				options.setDeviceName("MP35"); //emulator
+				options.setChromedriverExecutable("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\chromedriver.exe");
 				//options.setApp("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\ApiDemos-debug.apk");
 				options.setApp("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\General-Store.apk");
 				

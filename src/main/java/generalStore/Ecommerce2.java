@@ -2,14 +2,18 @@ package generalStore;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import setup.BaseSetup;
 
 public class Ecommerce2 extends BaseSetup{
@@ -62,7 +66,33 @@ public class Ecommerce2 extends BaseSetup{
 		driver.findElement(AppiumBy.className("android.widget.CheckBox")).click();
 		//Submit order
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
-		Thread.sleep(2000);
+		Thread.sleep(8000);
+		
+		//HYBRID - App that is Native with Browser
+		
+		//this gets all handles that are Currently Active
+		Set<String> contexts = driver.getContextHandles();
+		for(String contextName :contexts) //Enhanced For Loop
+		{
+			System.out.println(contextName);
+		}
+		driver.context("WEBVIEW_com.androidsample.generalstore"); //chrome driver
+		driver.findElement(By.name("q")).sendKeys("Chicken Pot Pie");
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		
+		//Switch back to NATIVE APP
+		driver.context("NATIVE_APP");
+		
+		//Current browser version is 124.0.6367.219 -> Download
+		
+		
+		
+		
+		
+		
 	}
+	
+	
 		
 }
