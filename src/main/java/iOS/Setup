@@ -1,0 +1,14 @@
+Download Appium Server
+Client - Server 4723
+
+Install XCode IDE (MAC ONLY) to compile App on suitable iPhone/iPad
+IPhone 12 - 14.3
+
+github appium / ios-catalog
+
+navigate to UiKitCatalog -> UiKitCatalog.xcodeproj (This is what you compile)
+
+After Compilation, the Iphone Emulator will open
+
+appium driver install xcuitest
+
