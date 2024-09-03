@@ -6,7 +6,7 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MobileBrowserTest extends setup.BrowserBaseTest{
+public class MobileBrowserTest extends androidSetup.BrowserBaseTest{
 
 	@Test
 	public void browserTest() throws InterruptedException {

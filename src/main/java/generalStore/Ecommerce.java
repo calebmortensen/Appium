@@ -7,8 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import androidSetup.BaseSetup;
 import io.appium.java_client.AppiumBy;
-import setup.BaseSetup;
 
 public class Ecommerce extends BaseSetup{
 

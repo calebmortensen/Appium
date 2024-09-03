@@ -4,9 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import androidSetup.BaseSetup;
+
 import java.net.MalformedURLException;
 import io.appium.java_client.AppiumBy;
-import setup.BaseSetup;
 
 public class LongPress extends BaseSetup {
 

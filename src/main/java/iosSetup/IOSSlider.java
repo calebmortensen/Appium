@@ -1,4 +1,4 @@
-package iOS;
+package iosSetup;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;

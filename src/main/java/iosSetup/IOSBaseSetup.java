@@ -1,28 +1,20 @@
-package setup;
+package iosSetup;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.Duration;
-
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
-import com.google.common.collect.ImmutableMap;
-
-import io.appium.java_client.AppiumBy;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.ios.options.XCUITestOptions;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 
-public class BrowserBaseTest {
-	public AndroidDriver driver;
+public class IOSBaseSetup {
+	public IOSDriver driver;
 	public AppiumDriverLocalService service;
 	
 	@BeforeClass
@@ -34,21 +26,23 @@ public class BrowserBaseTest {
 				service.start();
 				
 				//Appium code -> Appium Server -> Mobile
-								
-				UiAutomator2Options options = new UiAutomator2Options();
-				options.setDeviceName("MP35"); //emulator
-				options.setChromedriverExecutable("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\chromedriver.exe");
-				options.setCapability("browserName", "Chrome");
-				driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
+				//capabilities is android or ios etc
+				//appium driver install xcuitest  for MAC
+				//no uiautomator in MAC
+				
+				XCUITestOptions options = new XCUITestOptions();
+				options.setDeviceName("iPhone 13 Pro");
+				//options.setApp("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\UIKitCatalog.app");
+				options.setApp("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\TestApp 3 app");
+				options.setPlatformVersion("15.5");
+				//Appium - will install Webdriver Agent in IOS apps (substitute for uiautomator2 in android)
+				options.setWdaLaunchTimeout(Duration.ofSeconds(20));
+
+				driver = new IOSDriver(new URI("http://127.0.0.1:4723").toURL(), options);
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 												
 			}
 				
-								
-				public Double getFormattedAmount(String amount) {
-					Double price = Double.parseDouble(amount.substring(1)); //removes $ sign & makes string a double
-					return price;
-				}
 	
 	@AfterClass
 	public void tearDown() {

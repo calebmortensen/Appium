@@ -1,4 +1,4 @@
-package setup;
+package androidSetup;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -38,6 +38,9 @@ public class BaseSetup {
 				
 				UiAutomator2Options options = new UiAutomator2Options();
 				options.setDeviceName("MP35"); //emulator
+				//NOTE: options.setDeviceName("Android Device");  --> PHYSICALLY CONNECTED DEVICE via USB
+				//NOTE: MUST enabled DEVELOPER OPTIONS 7 TIMES on Android Phone & ALLOW USB DEBUGGING
+				//NOTE: adb devices
 				options.setChromedriverExecutable("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\chromedriver.exe");
 				//options.setApp("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\ApiDemos-debug.apk");
 				options.setApp("C:\\Users\\caleb\\EWS\\Appium\\src\\main\\java\\resources\\General-Store.apk");

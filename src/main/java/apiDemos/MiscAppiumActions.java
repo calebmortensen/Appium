@@ -4,11 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.DeviceRotation;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import androidSetup.BaseSetup;
+
 import java.net.MalformedURLException;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-import setup.BaseSetup;
 
 
 public class MiscAppiumActions extends BaseSetup {

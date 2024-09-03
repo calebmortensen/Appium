@@ -1,4 +1,4 @@
-package setup;
+package androidSetup;
 
 
 import org.openqa.selenium.By;

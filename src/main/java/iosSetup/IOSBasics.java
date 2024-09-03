@@ -1,4 +1,4 @@
-package iOS;
+package iosSetup;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

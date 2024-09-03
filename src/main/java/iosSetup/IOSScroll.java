@@ -1,4 +1,4 @@
-package iOS;
+package iosSetup;
 
 import java.util.HashMap;
 import java.util.Map;
