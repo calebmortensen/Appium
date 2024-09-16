@@ -57,7 +57,7 @@ public class Ecommerce2 extends BaseSetup{
 		String displaySum = driver.findElement(By.id("com.androidsample.generalstore:id/totalAmountLbl")).getText();
 		Double displayFormattedSum = getFormattedAmount(displaySum);
 		
-		Assert.assertEquals(totalSum, displayFormattedSum);
+		Assert.assertEquals(totalSum, (double)displayFormattedSum);
 		
 		WebElement element = driver.findElement(By.id("com.androidsample.generalstore:id/termsButton"));
 		longPressAction(element);

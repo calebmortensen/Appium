@@ -1,3 +1,9 @@
+NOTE: options.setDeviceName("Android Device"); --> PHYSICALLY CONNECTED
+DEVICE via USB
+NOTE: MUST enabled DEVELOPER OPTIONS 7 TIMES on Android Phone & ALLOW USB
+DEBUGGING
+NOTE: adb devices
+
 Download Appium Server
 Client - Server 4723
 
