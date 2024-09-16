@@ -85,7 +85,8 @@ public class Ecommerce2 extends BaseSetup{
 		//Switch back to NATIVE APP
 		driver.context("NATIVE_APP");
 		
-		//Current browser version is 124.0.6367.219 -> Download
+		//Current browser version is  ECOMMERCE APP is: 124.0.6367.219 -> Download
+		//https://storage.googleapis.com/chrome-for-testing-public/124.0.6367.219/win64/chromedriver-win64.zip
 		
 		
 		
